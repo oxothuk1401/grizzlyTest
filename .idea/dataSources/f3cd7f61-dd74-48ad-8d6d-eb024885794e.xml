@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - griizlyTest@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="griizlytest">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="information_schema"/>
+    <schema id="3" name="mysql"/>
+    <schema id="4" name="oxothukdb"/>
+    <schema id="5" name="performance_schema"/>
+    <schema id="6" name="reports">
+      <visible>1</visible>
+    </schema>
+    <schema id="7" name="sys"/>
+    <table id="8" parent="1" name="reports"/>
+    <column id="9" parent="8" name="idreports">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="10" parent="8" name="start_date">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="11" parent="8" name="end_date">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="12" parent="8" name="performer">
+      <mandatory>1</mandatory>
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="13" parent="8" name="activity">
+      <mandatory>1</mandatory>
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <key id="14" parent="8" name="PRIMARY">
+      <columns>idreports</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
